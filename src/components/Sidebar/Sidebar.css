@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.sidebar{
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f4f9;
+    padding: 10px 15px;
+}
+p{
+    display: flex;
+    align-items: center;
+}
+.sidebar .top{
+    margin-top: 15px;
+}
+.sidebar img{
+  width: 20px;
+  display: flex;          /* Use flexbox for alignment */
+    align-items: center;    /* Vertically align items */
+    gap: 10px;              /* Space between image and text */
+    font-size: 16px;        /* Adjust font size */
+  
+}
+.menu{
+    display: block;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.sidebar .new-chat{
+    margin-top: 50px;
+    display: inline-flex;         /* Change from 'inline-flex' to 'flex' */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    gap: 10px;
+    padding: 4px 10px;
+    border-radius: 50px;
+    background-color: #e6eaf1;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+}
+
+.sidebar .recent{
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 2.0s;
+}
+
+.sidebar .recent-title{
+     margin-top:30px ;
+     margin-bottom: 20px;
+}
+
+.sidebar .recent-entry{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
+    border-radius:40px;
+    color: #282828;
+    cursor: pointer;
+}
+
+.sidebar .recent-entry:hover{
+    background-color: #e2e6eb;
+}
+
+.sidebar .bottom{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar .bottom-item {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    gap: 10px;           /* Add spacing between icon and text */
+    padding: 5px 5px;  /* Add padding for spacing */
+    border-radius: 20px; /* Rounded corners for hover effect */
+    cursor: pointer;
+}
+
+.sidebar .bottom-item:hover {
+    background-color: #e2e6eb;
+}
